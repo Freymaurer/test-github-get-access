@@ -94,7 +94,7 @@ AnnotationFilesInfo
       
     let dtx = 
       DataContext(
-        name = info.FilePath + columnSelector,
+        name =  info.FilePath.Replace("\\", "/") + columnSelector,
         format = "text/tab-separated-values",
         selectorFormat=Constants.TSVSelectorFormat,
         explication = Constants.OntologyAnnotations.InternalIdentifierMap.[info.Organism],comments = ResizeArray([
