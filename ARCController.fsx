@@ -99,6 +99,7 @@ AnnotationFilesInfo
         selectorFormat=Constants.TSVSelectorFormat,
         explication = Constants.OntologyAnnotations.InternalIdentifierMap.[info.Organism],comments = ResizeArray([
           Comment("organism", info.Organism);
+          Comment("annotation type", info.AnnotationName)
           Comment("file type", "Annotation file")
         ])
       )
